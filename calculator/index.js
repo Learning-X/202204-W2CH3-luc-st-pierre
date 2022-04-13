@@ -1,6 +1,3 @@
-/* eslint-disable no-shadow */
-/* eslint-disable default-case */
-// DOM
 const buttonNumbers = document.querySelectorAll('[data-type="number"]');
 const buttonClear = document.querySelector('[data-type="clear"]');
 const buttonNegate = document.querySelector('[data-type="negate"]');
@@ -9,13 +6,11 @@ const buttonOperators = document.querySelectorAll('[data-type="operator"]');
 const buttonEqual = document.querySelector('[data-type="equal"]');
 const screen = document.getElementById("screen");
 
-// STATE
 let currentOperation = null;
 let leftOperand = "";
 let rightOperand = "";
 let clearScreen = false;
 
-// DOM events
 buttonClear.addEventListener("click", resetCalculator);
 buttonNegate.addEventListener("click", negateNumber);
 buttonEqual.addEventListener("click", evaluate);
@@ -32,7 +27,6 @@ buttonOperators.forEach((btn) => {
   });
 });
 
-// HELPER functions
 const setDotToComma = (num) => num.toString().replace(/\./g, ",");
 
 function removeActive() {
