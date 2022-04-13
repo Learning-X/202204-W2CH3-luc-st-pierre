@@ -23,7 +23,7 @@ buttonNumbers.forEach((btn) => {
 buttonOperators.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     handleOperation(btn.textContent);
-    handleClick(btn, event);
+    handleClick(event);
   });
 });
 
