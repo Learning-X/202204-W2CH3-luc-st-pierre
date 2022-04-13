@@ -1,5 +1,6 @@
 const sum = (a, b) => a + b;
 const rest = (a, b) => a - b;
+const multiplication = (a, b) => a * b;
 
 describe("Given the function sum", () => {
   describe("When two numbers are added together", () => {
@@ -21,6 +22,18 @@ describe("Given the function sum", () => {
       const expectedResult = 5;
 
       const result = rest(num1, num2);
+
+      expect(result).toBe(expectedResult);
+    });
+  });
+
+  describe("When two numbers are multiplied", () => {
+    test("Then it should return the product", () => {
+      const num1 = 7;
+      const num2 = 7;
+      const expectedResult = 49;
+
+      const result = multiplication(num1, num2);
 
       expect(result).toBe(expectedResult);
     });
