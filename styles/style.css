@@ -1,0 +1,16 @@
+header,
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+.link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: inherit;
+}
