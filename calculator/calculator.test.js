@@ -1,6 +1,7 @@
 const sum = (a, b) => a + b;
 const rest = (a, b) => a - b;
 const multiplication = (a, b) => a * b;
+const division = (a, b) => a / b;
 
 describe("Given the function sum", () => {
   describe("When two numbers are added together", () => {
@@ -34,6 +35,18 @@ describe("Given the function sum", () => {
       const expectedResult = 49;
 
       const result = multiplication(num1, num2);
+
+      expect(result).toBe(expectedResult);
+    });
+  });
+
+  describe("When two numbers are divided", () => {
+    test("Then it should return the quotient", () => {
+      const num1 = 12;
+      const num2 = 2;
+      const expectedResult = 6;
+
+      const result = division(num1, num2);
 
       expect(result).toBe(expectedResult);
     });
