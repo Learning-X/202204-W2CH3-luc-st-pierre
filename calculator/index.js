@@ -35,7 +35,7 @@ function removeActive() {
   });
 }
 
-function handleClick(btn, event) {
+function handleClick(event) {
   const active = document.querySelector(".active-operator");
   if (active) active.classList.remove("active-operator");
   event.currentTarget.classList.add("active-operator");
